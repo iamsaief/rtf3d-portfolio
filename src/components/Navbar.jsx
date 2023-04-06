@@ -23,7 +23,7 @@ const Navbar = () => {
 					<img
 						src={codeIcon}
 						alt="logo"
-						className="w-[28px] h-[28px] object-contain bg-white/80 border border-white/50 shadow-[0_0_15px_0px_rgba(255,255,255,0.65)]"
+						className="w-[28px] h-[28px] object-contain bg-white border border-white/50 shadow-[0_0_15px_0px_rgba(21,16,48 ,0.65)]"
 					/>
 					<p className="text-white text-[20px] font-bold cursor-pointer flex">
 						Saief <span className="font-light">&nbsp;|&nbsp;</span>
