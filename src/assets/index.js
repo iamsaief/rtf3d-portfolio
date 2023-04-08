@@ -30,6 +30,7 @@ import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 import codeIcon from './qr-code-icon.svg';
+import saiefLogo from './saief-logo.svg';
 
 export {
 	logo,
@@ -61,4 +62,5 @@ export {
 	jobit,
 	tripguide,
 	codeIcon,
+	saiefLogo,
 };
