@@ -5,10 +5,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build",
+		"build": "vite build --base=./",
 		"preview": "vite preview",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d dist"
 	},
 	"homepage": "http://iamsaief.github.io/rtf3d-portfolio",
 	"dependencies": {
