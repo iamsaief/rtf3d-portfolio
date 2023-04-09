@@ -49,10 +49,10 @@ const Works = () => {
 					variants={fadeIn('', '', 0.1, 1)}
 					className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 				>
-					I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks
-					like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create
-					efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring
-					your ideas to life!
+					I'm a skilled Frontend Developer with experience in JavaScript, and expertise in popular web technologies like
+					JavaScript, React, Next, Tailwind, Bootstrap, WordPress, PHP. I'm a quick learner and collaborate closely with
+					clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work
+					together to bring your ideas to life!
 				</motion.p>
 			</div>
 
@@ -61,11 +61,11 @@ const Works = () => {
 					<ProjectCard key={`project-${index}`} index={index} {...project} />
 				))}
 			</div>
-			<div className="mt-10 text-center">
+			<div className="mt-10 block text-center">
 				<a
 					href="https://github.com/iamsaief"
 					target="_blank"
-					className="px-6 py-2 font-sm text-base  bg-tertiary text-white rounded-full shadow-sm"
+					className="inline-block bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold rounded-xl shadow-md shadow-primary"
 				>
 					View more
 				</a>

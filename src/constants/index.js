@@ -23,6 +23,12 @@ import {
 	jobit,
 	tripguide,
 	threejs,
+	joomshaper,
+	helloacademy,
+	globe,
+	tutorlms,
+	tutorstarter,
+	themeum_themes,
 } from '../assets';
 
 export const navLinks = [
@@ -42,19 +48,19 @@ export const navLinks = [
 
 const services = [
 	{
-		title: 'Web Developer',
+		title: 'Frontend Engineer',
 		icon: web,
 	},
 	{
-		title: 'React Native Developer',
+		title: 'React Developer',
 		icon: mobile,
 	},
 	{
-		title: 'Backend Developer',
+		title: 'Web Developer',
 		icon: backend,
 	},
 	{
-		title: 'Content Creator',
+		title: 'UI Developer',
 		icon: creator,
 	},
 ];
@@ -72,10 +78,10 @@ const technologies = [
 		name: 'JavaScript',
 		icon: javascript,
 	},
-	{
-		name: 'TypeScript',
-		icon: typescript,
-	},
+	// {
+	// 	name: 'TypeScript',
+	// 	icon: typescript,
+	// },
 	{
 		name: 'React JS',
 		icon: reactjs,
@@ -108,124 +114,128 @@ const technologies = [
 		name: 'figma',
 		icon: figma,
 	},
-	{
-		name: 'docker',
-		icon: docker,
-	},
+	// {
+	// 	name: 'docker',
+	// 	icon: docker,
+	// },
 ];
 
 const experiences = [
 	{
-		title: 'React.js Developer',
-		company_name: 'Starbucks',
-		icon: starbucks,
-		iconBg: '#383E56',
-		date: 'March 2020 - April 2021',
+		title: 'Software Engineer',
+		company_name: 'JoomShaper',
+		icon: joomshaper,
+		iconBg: '#ffffff',
+		date: 'Sept 2021 - Oct 2022 ',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Led the frontend development team. Developed new features according to design, delivered quick responses to consumer feature requests. Regardless of the frontend or backend, WordPress issues have been analyzed and provided fixes. ',
+			'Developed design system and actively contributed to the core of Tutor LMS 2.X.X.',
+			'Implementing responsive design and ensuring cross-browser compatibility. Transferring design into production-ready WordPress plugins and themes 24x7',
+			'Developing and maintaining web applications using vanilla JS, React.js, SASS/SCSS, HTML, PHP and other related technologies. ',
 		],
 	},
 	{
-		title: 'React Native Developer',
-		company_name: 'Tesla',
-		icon: tesla,
-		iconBg: '#E6DEDD',
-		date: 'Jan 2021 - Feb 2022',
+		title: 'Frontend Developer',
+		company_name: 'JoomShaper',
+		icon: joomshaper,
+		iconBg: '#ffffff',
+		date: 'Jun 2019 - Aug 2021 ',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
 			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Actively collaborated to develop up-and-running WordPress plugins, building, updating and fixing features & UIs.',
+			'Worked on Page Builder tools and Qubely & Tutor LMS, popular flagship plugins, as a Frontend Developer. ',
+			'Built new features, fixing bugs & updating UI/UX issues.',
 		],
 	},
 	{
-		title: 'Web Developer',
-		company_name: 'Shopify',
-		icon: shopify,
-		iconBg: '#383E56',
-		date: 'Jan 2022 - Jan 2023',
+		title: 'Freelance Web Designer',
+		company_name: 'Online/Offline',
+		icon: globe,
+		iconBg: '#ffffff',
+		date: 'Feb 2018 - Jun 2019',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			"Developed web interfaces as per client's requirement. Updated and fixed bugs on client's website. Provided customer support.",
 		],
 	},
 	{
-		title: 'Full stack Developer',
-		company_name: 'Meta',
-		icon: meta,
-		iconBg: '#E6DEDD',
-		date: 'Jan 2023 - Present',
+		title: 'Frontend Developer',
+		company_name: 'Hello Academy',
+		icon: helloacademy,
+		iconBg: '#ffffff',
+		date: 'Feb 2017 - Dec 2017',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Worked on HTML templates, WordPress theme development. Trained and guided 7 interns how to build scalable UI.',
+			'Gained appreciation for presentation skills, being calm & cool-headed teammate.',
 		],
 	},
 ];
 
 const testimonials = [
 	{
-		testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-		name: 'Sara Lee',
-		designation: 'CFO',
-		company: 'Acme Co',
+		testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Saief me wrong.',
+		name: 'Jhane Doe',
+		designation: 'CEO',
+		company: 'JoomShaper',
 		image: 'https://randomuser.me/api/portraits/women/4.jpg',
 	},
 	{
-		testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
+		testimonial: "I've never met a web developer who truly cares about their clients' success like Saief does.",
 		name: 'Chris Brown',
-		designation: 'COO',
-		company: 'DEF Corp',
+		designation: 'CDO',
+		company: 'JoomShaper',
 		image: 'https://randomuser.me/api/portraits/men/5.jpg',
 	},
 	{
-		testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: 'Lisa Wang',
-		designation: 'CTO',
-		company: '456 Enterprises',
-		image: 'https://randomuser.me/api/portraits/women/6.jpg',
+		testimonial: "After he redesigned Tutor LMS v2.x.x, our traffic increased by 50%. We can't thank him enough!",
+		name: 'Shoan Mandes',
+		designation: 'Software Engineer, Lead',
+		company: 'JoomShaper',
+		image: 'https://randomuser.me/api/portraits/men/6.jpg',
 	},
 ];
 
 const projects = [
 	{
-		name: 'Car Rent',
+		name: 'Tutor LMS',
 		description:
-			'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+			'A complete WordPress LMS plugin to create any e-learning website easily. Tutor LMS, the most powerful WordPress LMS plugin to kickstart your online classroom. Learning management system for all',
 		tags: [
 			{
-				name: 'react',
+				name: 'PHP',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'mongodb',
+				name: 'JavaScript',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'tailwind',
+				name: 'React',
 				color: 'pink-text-gradient',
 			},
+			{
+				name: 'SASS/SCSS',
+				color: 'orange-text-gradient',
+			},
 		],
-		image: carrent,
-		source_code_link: 'https://github.com/',
+		image: tutorlms,
+		source_code_link: 'https://github.com/themeum/tutor',
+		live_link: 'https://www.themeum.com/product/tutor-lms/',
 	},
 	{
-		name: 'Job IT',
+		name: 'Tutor Starter',
 		description:
-			'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+			'A Free eLearning Theme to Power Sites of All Shapes and Sizes. Tutor Starter is a WordPress LMS theme. For marketplaces, solo instructors, academic institutions, and anything in between!',
 		tags: [
 			{
-				name: 'react',
+				name: 'PHP',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'restapi',
+				name: 'WordPress',
+				color: 'orange-text-gradient',
+			},
+			{
+				name: 'React',
 				color: 'green-text-gradient',
 			},
 			{
@@ -233,29 +243,34 @@ const projects = [
 				color: 'pink-text-gradient',
 			},
 		],
-		image: jobit,
-		source_code_link: 'https://github.com/',
+		image: tutorstarter,
+		source_code_link: 'https://github.com/themeum/tutorstarter',
+		live_link: 'https://www.themeum.com/product/tutorstarter/',
 	},
 	{
-		name: 'Trip Guide',
+		name: 'WordPress Themes',
 		description:
-			'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+			'Explore our collection of WordPress Themes for business, blogs, portfolio. We are offering Responsive onepage WordPress Theme and Multipurpose WordPress Template. Also, download the most popular Crowdfunding & Fundraising WordPress Themes and Premium WordPress WooCommerce Theme.',
 		tags: [
 			{
-				name: 'nextjs',
+				name: 'WordPress',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'supabase',
+				name: 'PHP',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'css',
+				name: 'JavaScript',
 				color: 'pink-text-gradient',
 			},
+			{
+				name: 'CSS/SCSS',
+				color: 'orange-text-gradient',
+			},
 		],
-		image: tripguide,
-		source_code_link: 'https://github.com/',
+		image: themeum_themes,
+		source_code_link: 'https://www.themeum.com/wordpress-themes/',
 	},
 ];
 

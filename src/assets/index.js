@@ -31,6 +31,12 @@ import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 import codeIcon from './qr-code-icon.svg';
 import saiefLogo from './saief-logo.svg';
+import joomshaper from './company/joomshaper_logo.png';
+import helloacademy from './company/helloacademy.jpg';
+import globe from './company/globe.jpg';
+import tutorlms from './project/tutorlms.jpg';
+import themeum_themes from './project/themeums_themes.jpg';
+import tutorstarter from './project/tutorstarter.jpg';
 
 export {
 	logo,
@@ -63,4 +69,10 @@ export {
 	tripguide,
 	codeIcon,
 	saiefLogo,
+	joomshaper,
+	helloacademy,
+	globe,
+	tutorlms,
+	themeum_themes,
+	tutorstarter,
 };

@@ -33,11 +33,12 @@ const About = () => {
 				<p className={`${styles.sectionSubText}`}>Introduction</p>
 				<h2 className={`${styles.sectionHeadText}`}>Overview.</h2>
 			</motion.div>
-			<motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-				I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like
-				React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient,
-				scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to
-				life!
+			<motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]">
+				As a frontend developer based in Dhaka, Bangladesh 🇧🇩, I have a strong background in computer science and a keen
+				eye for design. I have mastered various frontend technologies, such as HTML, CSS/SASS, Vanilla JavaScript,
+				Reactjs, WordPress, and more. I also have a deep understanding of design systems, accessibility, typography,
+				spacing, and modern single-page application development. I am always eager to learn new skills and take on new
+				challenges in the web development field.
 			</motion.p>
 
 			<div className="mt-20 flex flex-wrap gap-10">

@@ -1,6 +1,7 @@
-import { BrowserRouter } from 'react-router-dom';
-import { Hero, Navbar, About, Tech, Experience, Works, Feedbacks, Contact, StarsCanvas } from './components';
 import { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import { Hero, Navbar, About, Tech, Experience, Works, Feedbacks, Contact, StarsCanvas, Footer } from './components';
 
 function App() {
 	const [colorTheme, setColorTheme] = useState(
@@ -56,6 +57,7 @@ function App() {
 				<div className="relative z-0">
 					<Contact />
 					<StarsCanvas />
+					<Footer />
 				</div>
 			</div>
 		</BrowserRouter>

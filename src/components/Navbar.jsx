@@ -27,11 +27,9 @@ const Navbar = ({ colorTheme, setColorTheme, isDark }) => {
 	const [toggle, setToggle] = useState(false);
 	const [themeMenuToggle, setThemeMenuToggle] = useState(false);
 
-	console.log(isDark);
-
 	return (
 		<nav
-			className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 dark:bg-primary bg-slate-800 transition duration-300`}
+			className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 dark:bg-primary/90 bg-slate-800/90 transition duration-300 backdrop-blur border-b border-slate-50/[0.06]`}
 		>
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 				<Link
