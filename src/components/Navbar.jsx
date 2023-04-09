@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { Link } from 'react-router-dom';
-import { close, codeIcon, logo, menu, saiefLogo } from '../assets';
+import { close, logo, menu, saiefLogo } from '../assets';
 import { navLinks } from '../constants';
 import { MdOutlineLightMode, MdOutlineDarkMode } from 'react-icons/md';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
