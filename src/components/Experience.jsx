@@ -11,7 +11,10 @@ import { ThemeContext } from './ThemeContext';
 
 const ExperienceCard = ({ experience }) => {
 	const { colorTheme } = useContext(ThemeContext);
-	const formatteBg = colorTheme === 'dark' ? '#1d1836' : 'rgb(15 23 42 / 40%)';
+	const formatteBg =
+		colorTheme === 'dark' || (colorTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			? '#1d1836'
+			: 'rgb(15 23 42 / 40%)';
 
 	return (
 		<VerticalTimelineElement
