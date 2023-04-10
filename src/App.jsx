@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import { Hero, Navbar, About, Tech, Experience, Works, Feedbacks, Contact, StarsCanvas, Footer } from './components';
+
+export const ThemeContext = createContext();
 
 function App() {
 	const [colorTheme, setColorTheme] = useState(
@@ -42,24 +44,29 @@ function App() {
 		return () => mediaDark.addEventListener('change', handleColorTheme);
 	}, [colorTheme]);
 
+	console.log(colorTheme);
+
 	return (
 		<BrowserRouter>
-			<div className="relative z-0 bg-primary">
-				<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-					<Navbar colorTheme={colorTheme} setColorTheme={setColorTheme} />
-					<Hero />
+			<ThemeContext.Provider value={colorTheme}>
+				<div className="relative z-0 dark:bg-primary bg-slate-800">
+					<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+						<Navbar colorTheme={colorTheme} setColorTheme={setColorTheme} />
+						<Hero />
+					</div>
+					<About />
+					<Experience />
+					<Tech />
+					<Works />
+					<Feedbacks />
+					<div className="relative z-0">
+						<Contact />
+						<StarsCanvas />
+						<Footer />
+					</div>
 				</div>
-				<About />
-				<Experience />
-				<Tech />
-				<Works />
-				<Feedbacks />
-				<div className="relative z-0">
-					<Contact />
-					<StarsCanvas />
-					<Footer />
-				</div>
-			</div>
+			</ThemeContext.Provider>
+			;
 		</BrowserRouter>
 	);
 }

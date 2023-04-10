@@ -56,7 +56,10 @@ const Contact = () => {
 
 	return (
 		<div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
-			<motion.div variants={slideIn('left', 'tween', 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-xl">
+			<motion.div
+				variants={slideIn('left', 'tween', 0.2, 1)}
+				className="flex-[0.75] dark:bg-black-100 bg-slate-900/40 p-8 rounded-xl"
+			>
 				<p className={`${styles.sectionSubText}`}>Get in touch</p>
 				<h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
 
@@ -76,7 +79,7 @@ const Contact = () => {
 							onChange={formik.handleChange}
 							onBlur={formik.handleBlur}
 							placeholder="Whats your name"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary/50 text-white rounded-lg outline-none border-none font-medium"
+							className="dark:bg-tertiary bg-slate-900/40 py-4 px-6 placeholder:text-secondary/50 text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<label className="flex flex-col">
@@ -94,7 +97,7 @@ const Contact = () => {
 							onChange={formik.handleChange}
 							onBlur={formik.handleBlur}
 							placeholder="Whats your email"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary/50 text-white rounded-lg outline-none border-none font-medium"
+							className="dark:bg-tertiary bg-slate-900/40 py-4 px-6 placeholder:text-secondary/50 text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<label className="flex flex-col">
@@ -112,12 +115,12 @@ const Contact = () => {
 							onChange={formik.handleChange}
 							onBlur={formik.handleBlur}
 							placeholder="Whats your message"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary/50 text-white rounded-lg outline-none border-none font-medium"
+							className="dark:bg-tertiary bg-slate-900/40 py-4 px-6 placeholder:text-secondary/50 text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<button
 						type="submit"
-						className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold rounded-xl shadow-md shadow-primary"
+						className="dark:bg-tertiary bg-slate-900/40 py-3 px-8 outline-none w-fit text-white font-bold rounded-xl shadow-md shadow-primary"
 					>
 						{loading ? 'Sending...' : 'Send'}
 					</button>

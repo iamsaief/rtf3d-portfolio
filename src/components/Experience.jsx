@@ -6,12 +6,16 @@ import { styles } from '../styles';
 import { experiences } from '../constants';
 import { textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { useContext } from 'react';
+import { ThemeContext } from '../App';
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience, themeContext }) => {
+	const formatteBg = themeContext === 'dark' ? '#1d1836' : 'rgb(15 23 42 / 40%)';
+
 	return (
 		<VerticalTimelineElement
-			contentStyle={{ background: '#1d1836', color: '#fff' }}
-			contentArrowStyle={{ borderRight: '7px solid #1d1836' }}
+			contentStyle={{ background: `${formatteBg}`, color: '#fff' }}
+			contentArrowStyle={{ borderRight: `7px solid ${formatteBg}` }}
 			date={experience.date}
 			iconStyle={{ background: experience.iconBg }}
 			icon={
@@ -36,6 +40,9 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+	const themeContext = useContext(ThemeContext);
+	console.log(themeContext);
+
 	return (
 		<>
 			<motion.div variants={textVariant()}>
@@ -46,7 +53,7 @@ const Experience = () => {
 			<div className="mt-20 flex flex-col">
 				<VerticalTimeline>
 					{experiences.map((experience, index) => (
-						<ExperienceCard key={index} experience={experience} />
+						<ExperienceCard key={index} experience={experience} themeContext={themeContext} />
 					))}
 				</VerticalTimeline>
 			</div>
