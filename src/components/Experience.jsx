@@ -1,16 +1,17 @@
+import { useContext } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
 import { motion } from 'framer-motion';
+
 import { styles } from '../styles';
 import { experiences } from '../constants';
-import { textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import { useContext } from 'react';
-import { ThemeContext } from '../App';
+import { textVariant } from '../utils/motion';
+import { ThemeContext } from './ThemeContext';
 
-const ExperienceCard = ({ experience, themeContext }) => {
-	const formatteBg = themeContext === 'dark' ? '#1d1836' : 'rgb(15 23 42 / 40%)';
+const ExperienceCard = ({ experience }) => {
+	const { colorTheme } = useContext(ThemeContext);
+	const formatteBg = colorTheme === 'dark' ? '#1d1836' : 'rgb(15 23 42 / 40%)';
 
 	return (
 		<VerticalTimelineElement
@@ -40,9 +41,6 @@ const ExperienceCard = ({ experience, themeContext }) => {
 };
 
 const Experience = () => {
-	const themeContext = useContext(ThemeContext);
-	console.log(themeContext);
-
 	return (
 		<>
 			<motion.div variants={textVariant()}>
@@ -53,7 +51,7 @@ const Experience = () => {
 			<div className="mt-20 flex flex-col">
 				<VerticalTimeline>
 					{experiences.map((experience, index) => (
-						<ExperienceCard key={index} experience={experience} themeContext={themeContext} />
+						<ExperienceCard key={index} experience={experience} />
 					))}
 				</VerticalTimeline>
 			</div>

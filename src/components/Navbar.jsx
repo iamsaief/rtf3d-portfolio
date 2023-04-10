@@ -1,31 +1,34 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { styles } from '../styles';
 import { Link } from 'react-router-dom';
-import { close, logo, menu, saiefLogo } from '../assets';
+import { saiefLogo } from '../assets';
 import { navLinks } from '../constants';
 import { MdOutlineLightMode, MdOutlineDarkMode } from 'react-icons/md';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
 import { BiPlus, BiMenuAltRight } from 'react-icons/bi';
+import { ThemeContext } from './ThemeContext';
 
 const themeOptions = [
 	{
-		icon: '<MdOutlineLightMode />',
+		icon: <MdOutlineLightMode className="text-lg" />,
 		name: 'light',
 	},
 	{
-		icon: '<MdOutlineDarkMode />',
+		icon: <MdOutlineDarkMode className="text-lg" />,
 		name: 'dark',
 	},
 	{
-		icon: '<HiOutlineDesktopComputer />',
+		icon: <HiOutlineDesktopComputer className="text-lg" />,
 		name: 'system',
 	},
 ];
 
-const Navbar = ({ colorTheme, setColorTheme, isDark }) => {
+const Navbar = () => {
 	const [active, setActive] = useState('');
 	const [toggle, setToggle] = useState(false);
 	const [themeMenuToggle, setThemeMenuToggle] = useState(false);
+
+	const { colorTheme, setColorTheme } = useContext(ThemeContext);
 
 	return (
 		<nav
@@ -88,21 +91,7 @@ const Navbar = ({ colorTheme, setColorTheme, isDark }) => {
 									setColorTheme(mode.name);
 								}}
 							>
-								{mode.name === 'light' && (
-									<>
-										<MdOutlineLightMode className="text-lg" /> Light
-									</>
-								)}
-								{mode.name === 'dark' && (
-									<>
-										<MdOutlineDarkMode className="text-lg" /> Dark
-									</>
-								)}
-								{mode.name === 'system' && (
-									<>
-										<HiOutlineDesktopComputer className="text-lg" /> System
-									</>
-								)}
+								{mode.icon} {mode.name}
 							</li>
 						))}
 					</ul>
